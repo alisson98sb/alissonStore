@@ -32,8 +32,6 @@
   .populares__conteudo{
     display: flex;
 
-    justify-content: center;
-
     grid-area: conteudo;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -46,9 +44,6 @@
       "card-imagem"
       "card-corpo";
     grid-template-columns: 100%;
-    grid-template-rows: 175px auto;
-    margin-right: 1rem;
-    width: calc(20% - 1rem);
 
     .populares__card___imagem {
       grid-area: card-imagem;
@@ -89,5 +84,52 @@
 
   .populares__card:last-child {
     margin-right: 0;
+  }
+}
+
+//RESPONSIVE
+
+@media screen and (min-width: 0) {
+  .populares__conteudo {
+    flex-direction: column !important;
+  }
+
+  .populares__card {
+    width: 100% !important;
+
+    margin-bottom: 3rem;
+    margin-right: 0;
+
+    grid-template-rows: 250px auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .populares__conteudo {
+    flex-direction: row !important;
+  }
+
+  .populares__card {
+    width: calc(50% - 1rem) !important;
+    margin-right: 1rem;
+    grid-template-rows: 173px auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .populares__card {
+    width: calc(33.33% - 1rem) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .populares__conteudo {
+    justify-content: center;
+  }
+
+  .populares__card {
+    width: calc(20% - 1rem) !important;
+
+    margin-bottom: 0;
+
   }
 }
