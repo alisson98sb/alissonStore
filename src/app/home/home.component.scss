@@ -13,13 +13,31 @@
 }
 
 .cabecalho{
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-bottom: .5rem;
+
   grid-area: cabecalho;
 }
 
 .conteudo{
+  padding: 0rem 2rem;
+
   grid-area: conteudo;
 }
 
 .rodape{
   grid-area: rodape;
+
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+
+  background: #fdfdfd;
+  color: #333333;
+
+  font-size: .8rem;
+  font-weight: 600;
 }

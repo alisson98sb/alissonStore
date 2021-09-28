@@ -1,5 +1,5 @@
 .populares {
-  padding: 3rem 2rem;
+  padding: 3rem 0rem;
 
   .populares__cabecalho {
     border-bottom: solid 1px #dcdcdc;
@@ -9,12 +9,20 @@
     .populares__titulo {
       font-weight: 500;
 
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+
       .populares__icone{
         margin-right: .25rem;
       }
     }
 
     .populares__botao {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+
       background: transparent;
       border: none;
       color: #333333;

@@ -6,6 +6,10 @@ import { HomeComponent } from './home/home.component';
 import { HighlightsComponent } from './home/highlights/highlights.component';
 import { CategoriesComponent } from './home/highlights/categories/categories.component';
 import { PopularComponent } from './home/popular/popular.component';
+import { CabecalhoComponent } from './home/cabecalho/cabecalho.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -13,10 +17,13 @@ import { PopularComponent } from './home/popular/popular.component';
     HomeComponent,
     HighlightsComponent,
     CategoriesComponent,
-    PopularComponent
+    PopularComponent,
+    CabecalhoComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
